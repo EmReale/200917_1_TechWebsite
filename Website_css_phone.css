@@ -1,0 +1,161 @@
+/*PHONE VERSION*/
+
+:root {
+    --paleBlue: #9accfd;
+    --brightBlue: #3399ff;
+    --darkBlue: #0079f1;
+    --paleComp: #ffc9a2;
+    --comp: #ffa667;
+    
+    }
+    
+
+
+@media only screen and (max-width:768px) {    
+    #logoDiv {
+        float:none;
+        padding:none;
+        border:none;
+        background-color:black;
+        width:100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: black;
+        height: 50px; 
+        float:center;
+        border:none;
+    }
+    
+    nav a {
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 0.8em;
+        padding: 0.1em;
+        text-decoration: none;
+        padding-left: 1em;
+    }
+    
+    .tileText {
+        display: none;
+    }
+
+    #titleImg {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+    
+    .mission {
+        height:16em;
+    }
+
+    .tilesSect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .tile {
+        width: 95%;
+        height: 12em;
+        margin: 0.5em;
+        transition:1s;
+        background:#76baff;
+    }
+
+    .T2 {
+        background: var(--brightBlue);
+    }
+
+    .T3 {
+        background: var(--darkBlue);
+    }
+
+    .tile:hover {
+        width: 93%;
+        height:20em;
+        border-width: 1%;
+        border-color: rgb(21, 150, 255);
+        border-style: solid;
+        background: white;
+        display: flex;
+        justify-content:center;
+        align-content:center;
+    }
+
+
+    .tile:hover .tileText {
+        display: block;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9em;
+        text-align:center;
+        padding:1em;
+        height:18em;
+    }
+
+    .tile:hover h3 {
+        color:black;
+        padding-top:0.5em;
+    }
+
+    h2 {
+        color: black;
+        font-family: Verdana;
+        font-size: 1.8em;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        margin-left:0;
+    }
+    
+    
+
+    #logo {
+        float:none;
+    }
+
+
+
+
+
+    #webDev:hover ~ .webDevInfo {
+        display:none;
+    }
+
+    #frontEnd:hover ~ .frontEndInfo {
+        display: none;
+    }
+
+    #soft:hover ~ .softInfo {
+        display: none;
+    }
+
+    #ux:hover ~ .uxInfo {
+        display: none;
+    }
+    
+    #ui:hover ~ .uiInfo {
+        display: none;
+    }
+
+    #graphic:hover ~ .graphicInfo {
+        display: none;
+    }
+
+    #system:hover ~ .systemInfo {
+        display: none;
+    }
+
+
+    p{
+        padding:1em;
+        margin:1em;
+        width:80%;
+    }
